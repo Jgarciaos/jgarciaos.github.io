@@ -2,35 +2,41 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<BaseLayout title="About">
-  <div class="page">
-    <h1>About</h1>
-    <p>
-      This is the Astro Terminal theme, a port of the fantastic
-      <a href="https://github.com/panr/hugo-theme-terminal" target="_blank" rel="noopener">Hugo Terminal theme</a>
-      created by <a href="https://github.com/panr" target="_blank" rel="noopener">panr</a>.
-    </p>
+<BaseLayout title="Acerca de mí | JGarciaOs">
+  <article class="post">
+    <h1 class="post-title">whoami --verbose</h1>
     
-    <p>
-      The Astro version maintains all the great features of the original theme whilst using Astro's modern 
-      static site generation capabilities.
-    </p>
-    
-    <p>
-      The theme features syntax highlighting with Shiki, customisable colour schemes via
-      <a href="https://panr.github.io/terminal-css/" target="_blank" rel="noopener">Terminal.css</a>,
-      Fira Code monospace font, and a beautiful retro terminal aesthetic.
-    </p>
-    
-    <p>
-      Ported to Astro by <a href="https://github.com/dennisklappe" target="_blank" rel="noopener">Dennis Klappe</a>.
-    </p>
-  </div>
-</BaseLayout>
+    <div class="post-content">
+      <p>> Ejecutando presentación multimedia...</p>
+      
+      <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #1a1a1a; margin: 2rem 0; border: 1px solid #444;">
+        <iframe 
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+          src="https://www.youtube.com/embed/TU_ID_DE_VIDEO" 
+          title="Video de presentación - Bases de Datos 1" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+      </div>
 
-<style>
-  .page {
-    max-width: 760px;
-    margin: 0 auto;
-  }
-</style>
+      <hr />
+
+      <h2>Perfil del Estudiante</h2>
+      <p>
+        <strong>Nombre:</strong> Javier A. Garcia O. (Jhon)<br />
+        <strong>Intereses:</strong> [Aquí puedes poner tu hobby o deporte, ej: Fanático del senderismo y la producción musical].
+      </p>
+
+      <h2>¿Por qué Bases de Datos 1?</h2>
+      <p>
+        Considero que esta materia es fundamental para mi carrera profesional porque las bases de datos son el corazón de cualquier aplicación moderna. 
+        Sin una estructura de datos sólida y eficiente, el software no puede escalar ni garantizar la integridad de la información en el mundo real.
+      </p>
+
+      <blockquote>
+        "Este semestre quiero demostrar que puedo transformar el desorden de la información en estructuras eficientes y seguras."
+      </blockquote>
+    </div>
+  </article>
+</BaseLayout>
