@@ -30,9 +30,4 @@ const posts = (await getCollection('posts'))
     </p>
 
   </div>
-  
-  <div class="posts">
-    <h2 style="margin-top: 2rem;">> Últimas entradas del log</h2>
-    {posts.map((post) => <PostCard post={post} />)}
-  </div>
 </BaseLayout>
