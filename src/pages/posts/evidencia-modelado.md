@@ -4,6 +4,7 @@ description: 'Resolución de los ejercicios de modelado realizados en clase.'
 pubDate: 2025-02-19
 author: 'JGarciaOs'
 image: '/favicon.svg'
+draft: false
 tags: ['modelado']
 ---
 
