@@ -12,34 +12,56 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
     </div>
 
     <div class="post-content">
-      <p>> Cargando registros de diagramas...</p>
-      
+
       <section style="margin-top: 2rem;">
-        <h3>Ejercicio 1: [Nombre del Enunciado]</h3>
-        <p><strong>Enunciado:</strong> [Texto del enunciado aquí]</p>
-        <img src={`${base}ejercicio1.png`} alt="Modelo 1" class="evidence-img" />
+        <h3>Ejercicio 1: [Biblioteca]</h3>
+        <p><strong>Enunciado:</strong> [Crear un diseño E/R que permita gestionar los datos de una biblioteca de modo que:
+        • Las personas socias de la biblioteca disponen de un código de socio
+          y además necesitar almacenar su cédula, dirección, teléfono, nombre y apellidos.
+        • La biblioteca almacena libros que presta a los socios, de ellos
+          se almacena su título, año en el que se escribió el libro,
+          nombre completo del autor (o autores), año en que se editó,
+          en qué editorial fue y el ISBN.
+        • Necesitamos poder indicar si un libro en la biblioteca está
+          dañado o no.]</p>
+        <img src={`${base}Modelado1.png`} alt="Modelo 1" class="evidence-img" />
       </section>
 
       <hr />
 
       <section>
-        <h3>Ejercicio 2: [Nombre del Enunciado]</h3>
-        <p><strong>Enunciado:</strong> [Texto del enunciado aquí]</p>
-        <img src={`${base}ejercicio2.png`} alt="Modelo 2" class="evidence-img" />
+        <h3>Ejercicio 2: [Hospital - Urgencias]</h3>
+        <p><strong>Enunciado:</strong> [Crear un diseño E/R que permita gestionar los datos de un
+        Hospital de modo que:
+        • Los pacientes tienen una cédula, dirección, teléfonos de
+          contacto, nombre y apellidos, fecha de nacimiento y edad.
+        • Los médicos del Hospital también tienen su cédula, nombre
+          completo, especialidad y celular.
+        • Necesitamos poder indicar si un paciente ya pasó por Triage
+          (en una fecha) y saber cual es su nivel de esa evaluación.]</p>
+        <img src={`${base}Modelado2.png`} alt="Modelo 2" class="evidence-img" />
       </section>
 
       <hr />
 
       <section>
-        <h3>Ejercicio 3: [Nombre del Enunciado]</h3>
-        <p><strong>Enunciado:</strong> [Texto del enunciado aquí]</p>
-        <img src={`${base}ejercicio3.png`} alt="Modelo 3" class="evidence-img" />
+        <h3>Ejercicio 3: [University Champions League]</h3>
+        <p><strong>Enunciado:</strong> [El equipo organizador de la University Champions
+        League de la Universidad El Bosque, requiere un
+        sistema de información que almacene las estadísticas
+        del torneo de fútbol que se llevará a cabo en el mes de
+        Abril. Por consiguiente, la información que se requiere
+        consultar está relacionada a los equipos de fútbol, los
+        semestres, los programas académicos al que pertenece,
+        información de cada jugador, puntos obtenidos en cada
+        juego, tarjetas amarillas/rojas por cada jugador y las
+        posiciones de la tabla en tiempo real.
+        Diseñe un modelo Entidad – Relación que cumpla con el
+        mínimo de esta solicitud.]</p>
+        <img src={`${base}Modelado3.png`} alt="Modelo 3" class="evidence-img" />
       </section>
 
       <br />
-      <blockquote>
-        "Transformando datos en estructuras eficientes."
-      </blockquote>
     </div>
   </article>
 </BaseLayout>
