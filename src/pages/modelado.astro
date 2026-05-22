@@ -226,6 +226,55 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
         <img src={`${base}BarkerMR.png`} alt="MERE Nómina" class="evidence-img" />
       <section>
       <hr/>
+
+      <h3>[Ejercicio: Eat'n go]</h3>
+      <h2>Link de acceso:</h2>
+      <p>https://lucid.app/lucidchart/35464629-7b35-4bea-a397-fc3fc6426ea6/edit?page=tExQAUzgmxTy#</p>
+        <p><strong>Enunciado:</strong> Eat’n Go, una empresa internacional dedicada a la comercialización de comidas rápidas, tiene la intención de ubicar una franquicia en nuestra localidad, siéndole necesario informatizar la gestión del negocio adaptándolo a las características propias de la clientela esperada. Esta empresa se dedica a la venta de pizzas y bocadillos, además de productos complementarios como refrescos, helados, etc.Según las especificaciones aportadas por esta empresa se sabe que:
+
+        SUPUESTO 1: Tanto las pizzas como los bocadillos pueden condimentarse con un número de ingredientes de entre un conjunto de ellos con los que trabaja la empresa.
+
+        SUPUESTO 2: Los ingredientes con los que se hacen los bocadillos pueden ser iguales o distintos a aquellos con los que se hacen las pizzas.
+
+        SUPUESTO 3: El número de ingredientes que intervienen en un artículo que se vende (pizza o bocadillo) no está delimitado, pudiendo realizarse una venta de estos artículos sin ningún ingrediente. Es decir, la empresa vende también las bases de las pizzas y el pan con los que prepara las pizzas y los bocadillos, respectivamente.
+
+        SUPUESTO 4: Cada artículo que vende la empresa (pizzas, bocadillos y productos complementarios) tiene un precio base asignado (el precio de estos productos cuando se venden de forma independiente), sin contar los ingredientes que pueden acompañar a alguno de estos tipos de artículos.
+
+        SUPUESTO 5: Cada ingrediente tiene un precio para los bocadillos, mientras que para las pizzas todos los ingredientes tienen el mismo precio (los productos complementarios no llevan ingredientes).
+
+        SUPUESTO 6: Los artículos se pueden vender en distinto tamaño, en cuyo caso el precio base es distinto según el tamaño, y el precio de los ingredientes también. Existen, actualmente, tres tamaños en los que se venden los bocadillos y las pizzas (pequeño, normal y grande).
+
+        SUPUESTO 7: Las ventas se pueden hacer de tres formas diferentes: para consumir en el local, para recoger en el local y llevar o consumir en el mismo, y para servir a domicilio, en cuyo caso puede incrementarse un cargo añadido por el porte de la venta.
+
+        SUPUESTO 8: Los artículos complementarios que vende la empresa tienen un precio fijo en base a su tipo, tamaño, sabor, etc.
+
+        SUPUESTO 9: Los clientes pueden solicitar un servicio de la empresa (un pedido) tanto personalmente en el local como telefónicamente.
+
+        SUPUESTO 10: En los pedidos telefónicos se tomarán los datos completos del cliente; en los de recoger sólo el documento nacional de identidad y su nombre completo, y en los de consumir en el local no se tomará ningún dato, a no ser que sea necesario por otras razones.
+
+        SUPUESTO 11: A la empresa le interesa mantener información de todos los clientes a los que se les recoge información por dos razones:Simplemente a escala informativa, de consumo y marketing.Para llevar el control del consumo y favorecer, mediante obsequios, a aquellos clientes que alcancen un cierto consumo.
+
+        SUPUESTO 12: La empresa organiza, a veces, promociones para sus clientes. Éstas se basan en el obsequio de algún regalo o artículo de propaganda sobre la base de:Las unidades consumidas de alguno de los tipos de artículos: pizzas o bocadillos.Cargo total alcanzado en los pedidos.
+
+        SUPUESTO 13: Cuando la empresa obsequia a los clientes con algún artículo de promoción siempre recaba de los mismos toda su información y, además mantiene información sobre los regalos de promoción que se les entrega para, a ser posible, no hacer entregas duplicadas de los mismos.
+
+        SUPUESTO 14: La empresa cuenta con una serie de repartidores encargados del reparto a domicilio y de una batería de scooters para ayudarles en su cometido. Cada reparto se le asigna a un repartidor, el cual tiene asignado un scooter, aunque un mismo scooter puede ser utilizado por distintos repartidores (por supuesto en distintos turnos de trabajo).
+
+        SUPUESTO 15: A la empresa le interesa conocer información del coste de los scooters sobre la base del consumo de gasolina de los mismos en la realización de los repartos.
+
+        SUPUESTO 16: Los precios de todos los artículos que vende la empresa tienen el IVA incluido.
+
+        SUPUESTO 17: En los pedidos a domicilio existe un mínimo, en lo referente al valor del pedido, para que éste sea servido. Si el valor de los artículos que componen el pedido no alcanza este mínimo y el cliente desea que se le sirva a domicilio, se le cobrará ese mínimo.
+
+        SUPUESTO 18: La empresa cuenta con una serie de pizzas y bocadillos “estrellas”, los cuales están formados por un conjunto de ingredientes predeterminados. Estos artículos tienen un nombre comercial único y su precio es el que resulta del acumulado de los ingredientes que incorporan.</p>
+        <h2>[Solución: Modelo Entidad Relación. Notación Peter-Chen]</h2>
+        <img src={`${base}EatNGoMERE.png`} alt="MERE Eat'n go" class="evidence-img" />
+        <h2>[Modelo Entidad Relación. Notación Barker]</h2>
+        <img src={`${base}EatNGoBarker.jpeg`} alt="MERE Nómina" class="evidence-img" />
+        <h2>[Modelo Relacional. Notación Barker]</h2>
+        <img src={`${base}EatNGoRelacional.png`} alt="MERE Nómina" class="evidence-img" />
+      <section>
+      <hr/>
       </section>
       <br />
     </div>
