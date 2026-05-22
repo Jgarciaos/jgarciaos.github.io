@@ -62,10 +62,10 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
       </section>
 
       <section>
-        <h2>Taller Modelado Entidad Relación 1</h2>
+        <h2>[Taller Modelado Entidad Relación 1]</h2>
         <h2>Link de acceso:</h2>
         <p>https://lucid.app/lucidchart/d3bb5c5e-0337-4185-a34e-8f40a6f41079/edit?viewport_loc=-63444%2C-28574%2C36948%2C14952%2C0_0&invitationId=inv_8a9ad474-9464-4208-b49d-0dccffdd550e</p>
-        <h3>Ejercicio: Paquetería</h3>
+        <h3>[Ejercicio: Paquetería]</h3>
         <p><strong>Enunciado:</strong> Se desea informatizar la gestión de una empresa de transportes que reparte paquetes por toda Colombia. 
         Los encargados de llevar los paquetes son los Conductores, de los que se quiere guardar el número de cédula de ciudadanía, nombre, teléfono, dirección, salario y ciudad en la que vive. 
         De los paquetes transportados interesa conocer el código de paquete, descripción, destinatario y dirección del destinatario. Un conductor distribuye muchos paquetes, y un paquete sólo puede ser distribuido por un conductor. 
@@ -76,7 +76,8 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
         <img src={`${base}PaquetesTaller1.jpeg`} alt="Modelo Paquetería" class="evidence-img" />
       </section>
 
-      <h3>Ejercicio: Bienes Raíces</h3>
+      <section>
+      <h3>[Ejercicio: Bienes Raíces]</h3>
         <p><strong>Enunciado:</strong> Una empresa de bienes raíces realiza un seguimiento de las casas en venta y de los clientes que buscan comprar casas. Una casa en venta puede estar listada con esta firma o con otra diferente.
         Estar “listado” con una firma significa que el dueño de la casa tiene un contrato con un agente que trabaja para esa firma.
         Un agente de bienes raíces de la empresa se caracteriza por tener un nombre (compuesto por Primer nombre, Segundo Nombre, Primer Apellido y Segundo Apellido), cédula de ciudadanía, género, fecha de nacimiento (sobre la cual se obtiene la edad), una cantidad de ventas realizadas en el último mes y un código de agente único.
@@ -86,7 +87,7 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
       </section>
 
       <section>
-        <h3>Ejercicio: Esquema de Bases de Datos</h3>
+        <h3>[Ejercicio: Esquema de Bases de Datos]</h3>
         <p><strong>Enunciado:</strong> Considere el siguiente esquema de base de datos (estructura de tablas y relaciones): 
         • Proveedor (SName, ItemName, Price): el proveedor SName vende el artículo ItemName al precio Price
         • Cliente (CName, Address): el CName del cliente vive en Address.
@@ -97,14 +98,16 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
         <img src={`${base}PedidosTaller1.jpeg`} alt="Modelo Esquema Pedidos" class="evidence-img" />
       </section>
 
-      <h3>Ejercicio: Biblioteca</h3>
+      <section>
+      <h3>[Ejercicio: Biblioteca]</h3>
         <p><strong>Enunciado:</strong> Realizar el diseño conceptual (mediante un diagrama E-R) de las operaciones de una biblioteca comunitaria local. La biblioteca tiene libros, CD, cintas, etc., que se prestan a diferentes usuarios. 
         Estos últimos cuentan con un número de cuenta único, direcciones, números telefónicos, fecha de nacimiento, entre otros. Si un artículo prestado está vencido (por fuera de la fecha límite de entrega), acumula penalización. 
         Algunos usuarios son menores de edad (menores a 18 años), por lo que deben tener patrocinadores que sean responsables de pagar las multas (o reemplazar un libro en caso de pérdida). </p>
         <img src={`${base}BibliotecaTaller.png`} alt="Modelo Biblioteca Taller" class="evidence-img" />
       </section>
 
-      <h3>Ejercicio: Supermercado</h3>
+      <section>
+      <h3>[Ejercicio: Supermercado]</h3>
         <p><strong>Enunciado:</strong> Una cadena de supermercados está interesada en construir un sistema de apoyo a la decisión
         con el que pueda analizar las ventas de diferentes productos en diferentes supermercados
         en diferentes momentos. Cada supermercado está ubicado en área geográfica: una ciudad,
@@ -114,7 +117,8 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
         <img src={`${base}Supermercado.png`} alt="Modelo Supermercado Taller" class="evidence-img" />
       </section>
 
-      <h3>Ejercicio: Universidad</h3>
+      <section>
+      <h3>[Ejercicio: Universidad]</h3>
         <p><strong>Enunciado:</strong> Una oficina de registro de una universidad mantiene datos acerca de las siguientes entidades:
         (a) asignaturas, incluyendo el número, título, programa, y prerrequisitos; (b) ofertas de
         asignaturas, incluyendo número de asignatura, año, semestre, número de sección,
@@ -128,7 +132,8 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
         restricciones de correspondencia. </p>
         <img src={`${base}Universidad.png`} alt="Modelo Universidad Taller" class="evidence-img" />
 
-        <h3>Ejercicio: Contexto del ejercicio</h3>
+      <section>
+      <h3>[Ejercicio: Contexto del ejercicio]</h3>
         <p><strong>Enunciado:</strong> Describa con sus propias palabras el contexto que describe el diagrama proveído, indicando claramente atributos, llaves primarias y llaves foráneas de cada una de las entidades allí descritas.
         <br><strong>Respuesta:</strong>Es una empresa de prestamo de sucursales, identificadas principalmente por el nombre de la sucrusal, pero también se tiene la información de la ciudad de la misma y de si esta se encuentra activa.
         Los clientes se distinguen en el sistema principalmente por su id y a su vez, se registra su nombre, ciudad y calle; a estos se les concede un prestamo, identificado por su número único, y registrando su valor de importación.
@@ -137,11 +142,11 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
         No obstante, a los clientes se les impone, con fecha de acceso, una cuenta, establecida por su número de cuenta, junto con su saldo su saldo y el tipo de cuenta, donde si es una cuenta de ahorros, se registra su tipo de interés, en caso de ser cuenta corriente, se registra su descubrimiento.</p>
         <img src={`${base}Contexto.png`} alt="Modelo Contexto Taller" class="evidence-img" />
 
-        <section>
-        <h2>Taller Modelado Entidad Relación 3</h2>
-        <h2>Link de acceso:</h2>
-        <p>https://lucid.app/lucidchart/d3bb5c5e-0337-4185-a34e-8f40a6f41079/edit?viewport_loc=-63444%2C-28574%2C36948%2C14952%2C0_0&invitationId=inv_8a9ad474-9464-4208-b49d-0dccffdd550e</p>
-        <h3>Ejercicio: Taller/Parqueadero</h3>
+      <section>
+      <h2>[Taller Modelado Entidad Relación 3]</h2>
+      <h2>Link de acceso:</h2>
+      <p>https://lucid.app/lucidchart/d3bb5c5e-0337-4185-a34e-8f40a6f41079/edit?viewport_loc=-63444%2C-28574%2C36948%2C14952%2C0_0&invitationId=inv_8a9ad474-9464-4208-b49d-0dccffdd550e</p>
+      <h3>Ejercicio: Taller/Parqueadero]</h3>
         <p><strong>Enunciado:</strong> En el estacionamiento de la Universidad El Bosque se piensa implementar un espacio para la reparación de vehículos de los estudiantes, profesores y visitantes al centro médico Los Cobos. 
         La idea es implementar una solución tecnológica y ustedes como Ingenieros de datos han sido seleccionados para diseñar el modelo de datos de una base de datos relacional, la cual maneja la información de sus clientes, los automóviles que atiende, los técnicos especializados que trabajan en el taller y los componentes que se usan en cada servicio. 
         El proceso de servicio es el siguiente:
@@ -155,7 +160,8 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
         Todos los componentes tienen un código, nombre y precio, pero se diferencian en varias categorías: Aceites: Adicionalmente, registran la densidad. Filtros: Adicionalmente, registran el tipo de filtro (aire, aceite, combustible). Baterías: Adicionalmente, registran el a</p>
         <img src={`${base}Taller.jpeg`} alt="Modelo Parqueadero" class="evidence-img" />
 
-        <h3>Ejercicio: Innova</h3>
+      <section>
+        <h3>[Ejercicio: Innova]</h3>
         <p><strong>Enunciado:</strong> Una empresa de servicios tecnológicos, “Soluciones Innova”, ha decidido modernizar su sistema de gestión interno debido a que su plataforma anterior era ineficiente y no permitía registrar toda la información crucial para la toma de decisiones. 
         Por ello, se ha encargado el desarrollo de un nuevo sistema de información con las siguientes especificaciones:
         • Se requiere almacenar la información de los clientes corporativos de la consultora. Por cada cliente, se necesita registrar su nombre de empresa, dirección, número de identificación tributaria (NIT), y es posible que tengan múltiples números de teléfono de contacto.
@@ -168,8 +174,10 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
         Un punto crucial para la gestión de la empresa es el concepto de “equipo de proyecto”. Cada equipo está formado por varios gerentes de proyecto que, a pesar de participar en un servicio, mantienen su independencia y pueden ser parte de otros equipos en paralelo. 
         Sin embargo, para fines de planificación y facturación, el sistema debe reconocer que un equipo está compuesto por los gerentes que lo integran. Si un servicio se cancela, el equipo asociado deja de existir como tal, pero los gerentes que lo formaban continúan existiendo en la base de datos.</p>
         <img src={`${base}Innova.png`} alt="Modelo Innova" class="evidence-img" />
+      </section>
 
-        <h3>Ejercicio: Metro</h3>
+      <section>
+        <h3>[Ejercicio: Metro]</h3>
         <p><strong>Enunciado:</strong> Se requiere diseñar la base de datos para la gestión operativa del Sistema de Metro de Bogotá, asumiendo que ya cuenta con varias líneas en pleno funcionamiento. Los requisitos del sistema son los siguientes:
         • Estructura de Líneas: Una línea de metro se compone de una serie de estaciones en un orden secuencial, y es crucial registrar esta secuencia para la operación.
         • Conectividad de Estaciones: Cada estación del sistema pertenece a al menos una línea. Las estaciones de transferencia (como la futura Calle 72 o el Portal de las Américas) pueden pertenecer a varias líneas. Es importante destacar que una vez que una estación es asignada a una línea, esta pertenencia es permanente y no puede ser modificada.
@@ -178,8 +186,10 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
         • Patio de Mantenimiento: El sistema tiene varios patios de mantenimiento y talleres. Cada tren debe tener un patio asignado para su resguardo. Un tren puede ser reasignado a un patio diferente, pero bajo ninguna circunstancia puede quedar sin uno.
         • Necesidades de Información: La gestión del sistema requiere poder consultar todos los accesos disponibles para los pasajeros en cada una de las líneas del metro.</p>
         <img src={`${base}Metro.png`} alt="Modelo Metro" class="evidence-img" />
+      </section>
 
-        <h3>Ejercicio: Taberna</h3>
+      <section>
+        <h3>[Ejercicio: Taberna]</h3>
         <p><strong>Enunciado:</strong> “La Facultad”, una taberna icónica frente a la Universidad El Bosque, es conocida por su vasta colección musical. Su dueño, “Don Juan”, un apasionado melómano, desea organizar su catálogo. Para ello, necesita una base de datos que gestione toda su discoteca.
         La base de datos debe almacenar información sobre las grabaciones, los artistas que participan y las productoras que las distribuyen, con los siguientes requisitos:
         • Grabaciones Musicales: Se debe registrar el título, el género musical (p. ej., rock, jazz, salsa), la cantidad de canciones que contiene y un campo de notas para detalles especiales (como si es una edición limitada o en vivo). Cada grabación se identifica de manera única por su título.
@@ -187,7 +197,6 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
         • Artistas: Es necesario registrar el nombre del artista y una breve biografía con sus logros más importantes. También se debe registrar en qué grabaciones ha participado cada artista y la fecha de dicha participación.
         • Productoras: Toda grabación está asociada a una productora. Se debe registrar el nombre y la dirección de la productora. Cada una se identifica de forma única con un ID de compañía.</p>
         <img src={`${base}Taberna.png`} alt="Modelo Taberna" class="evidence-img" />
-
       </section>
 
       </section>
