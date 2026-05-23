@@ -3,18 +3,29 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : import.meta.env.BASE_URL + '/';
 ---
 
-<BaseLayout title="Evidencias de Modelado | JGarciaOs">
+<BaseLayout title="Evidencias de Normalización | JGarciaOs">
   <article class="post">
-    <h1 class="post-title">Evidencias de Modelado - Módulo 1</h1>
+    <h1 class="post-title">Evidencias de Nomrlaización</h1>
     <div class="post-meta">
-      <span class="post-date">2025-02-19</span>
       <span class="post-author">:: JGarciaOs</span>
     </div>
 
     <div class="post-content">
 
       <section style="margin-top: 2rem;">
-
+      <h3>Taller de Repaso</h3>
+        <p><strong>Enunciado:</strong>Este taller de repaso se diseñó para poner en práctica las reglas fundamentales del diseño lógico en bases de datos.
+          Durante su ejecución, se resolvieron problemas enfocados en detectar dependencias funcionales y mitigar redundancias o anomalías mediante la descomposición de tablas desde la 1FN hasta BCNF.
+          Además, la actividad evidenció cómo un buen modelo Entidad-Relación facilita el proceso de normalización, reafirmando la necesidad de estructurar bases de datos eficientes y libres de errores.</p>
+        
+      <p class="enlace-pdf">
+          Puedes revisar los ejercicios resueltos y el desarrollo completo de la actividad realizada por mi persona, Juan Orjuela y Deivid Rodríguez.
+          <a href={`${base}Taller_Normalizacion.pdf`} target="_blank" rel="noopener noreferrer">
+          </a>.
+        </p>
+      </section>
+      <hr/>
+    </div>
   </article>
 </BaseLayout>
 
