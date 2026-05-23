@@ -44,9 +44,9 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
         </p>
 
         <h3>Álgebra de Conjuntos y Juntas Avanzadas</h3>
-        <p><strong>Explicación:</strong> Laboratorio avanzado enfocado en la vinculación de entidades y la resolución de consultas complejas a través de operadores de combinación. 
+        <p><strong>Explicación:</strong> Actividad enfocada en la vinculación de entidades y la resolución de consultas complejas a través de operadores de combinación. 
         La práctica abordó de manera exhaustiva el comportamiento y la sintaxis de las diferentes variantes de combinación relacional, incluyendo INNER JOIN, LEFT JOIN, RIGHT JOIN 
-        y FULL OUTER JOIN, complementado con un taller de repaso analítico orientado a escenarios del mundo real.</p>
+        y FULL OUTER JOIN, complementado con un taller de repaso.</p>
       <p class="enlace-descarga">
           Archivo SQL con los SCRIPT con ejercicios de JOIN
           <a href={`${base}Join_HR.sql`} download="Join_HR.sql">
@@ -54,7 +54,22 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
         </p>
     
         <h2>[Laboratorio SQL]</h2>
+        <h3>Actividad laboratorio SQL en clase</h3>
+        <p><strong>Explicación:</strong> Este taller se centró en la implementación de SQL avanzado y el control de transacciones utilizando como entorno de pruebas el esquema HR de Oracle Database. 
+        Mediante la incorporación de tablas adicionales de nómina e historial laboral, se modeló un sistema empresarial de ajuste salarial. El desarrollo práctico exigió la construcción de consultas complejas mediante expresiones de tabla comunes (CTEs), 
+        funciones analíticas, subconsultas y juntas lógicas, aplicando reglas de negocio dinámicas. Finalmente, se integró la gestión de transacciones ACID utilizando sentencias COMMIT, 
+        ROLLBACK y SAVEPOINT para asegurar la consistencia absoluta e integridad de los datos durante los procesos de actualización masiva.</p>
+        <p class="enlace-descarga">
+          Archivo SQL con la solución planteada por el grupo
+          <a href={`${base}Taller1_Avanzado.sql`} download="Taller1_Avanzado.sql">
+          </a>.
+        </p>
 
+        <p class="enlace-descarga">
+          Archivo PDF con la explicación de las decisiones
+          <a href={`${base}Taller_avanzado_1_GarciaJavier_OrjuelaJuan.pdf`} download="Taller_avanzado_1_GarciaJavier_OrjuelaJuan.pdf">
+          </a>.
+        </p>
 
       </section>
       <hr/>
