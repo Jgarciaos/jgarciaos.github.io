@@ -1,0 +1,63 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : import.meta.env.BASE_URL + '/';
+---
+
+<BaseLayout title="Evidencias de Normalización | JGarciaOs">
+  <article class="post">
+    <h1 class="post-title">Evidencias de Nomrlaización</h1>
+    <div class="post-meta">
+      <span class="post-author">:: JGarciaOs</span>
+    </div>
+
+    <div class="post-content">
+
+      <section style="margin-top: 2rem;">
+        <h3>Taller de Repaso</h3>
+        <p><strong>Enunciado:</strong>QueBoleteo es una plataforma centralizada para la gestión de conciertos, tours y festivales en Colombia, desarrollada entre febrero y mayo de 2026 como el proyecto 
+        integrador de la materia "Bases de Datos 1". El sistema nace para resolver la dispersión de información en el sector del entretenimiento, unificando en un solo lugar la consulta y administración de eventos musicales. 
+        Este desarrollo práctico permitió consolidar y aplicar de manera real los conocimientos adquiridos a lo largo del curso, abarcando desde el modelado conceptual hasta la implementación y optimización de la base de datos.</p>
+
+      <p class="enlace-descarga">
+          Puedes revisar las documentación completa del proyecto, así como el video de demostración en el siguiente archivo zip
+          <a href={`${base}documentos/DocumentacionQueBoleteo.zip`} download="DocumentacionQueBoleteo.zip">
+          </a>.
+        </p>
+
+
+</section>
+      <hr/>
+    </div>
+  </article>
+</BaseLayout>
+
+<style>
+  .evidence-img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #444;
+    margin: 1rem 0 2rem 0;
+    display: block;
+  }
+  h3 {
+    color: var(--global-color-primary, #2ecc71);
+  }
+  .enlace-descarga {
+    margin-top: 1rem;
+    font-style: italic;
+  }
+  .enlace-descarga a {
+    color: var(--global-color-primary, #2ecc71); 
+    text-decoration: underline;
+    font-weight: bold;
+    transition: opacity 0.2s ease;
+  }
+  .enlace-descarga a::before {
+    content: "[↓] ";
+    font-family: monospace;
+  }
+
+  .enlace-descarga a:hover {
+    opacity: 0.8;
+  }
+</style>
