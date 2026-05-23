@@ -18,11 +18,24 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
           Durante su ejecución, se resolvieron problemas enfocados en detectar dependencias funcionales y mitigar redundancias o anomalías mediante la descomposición de tablas desde la 1FN hasta BCNF.
           Además, la actividad evidenció cómo un buen modelo Entidad-Relación facilita el proceso de normalización, reafirmando la necesidad de estructurar bases de datos eficientes y libres de errores.</p>
         
-      <p class="enlace-pdf">
-          Puedes revisar los ejercicios resueltos y el desarrollo completo de la actividad realizada por mi persona, Juan Orjuela y Deivid Rodríguez.
-          <a href={`${base}Taller_Normalizacion.pdf`} target="_blank" rel="noopener noreferrer">
+      <p class="enlace-descarga">
+          Puedes revisar las tablas, dependencias funcionales y la solución completa 
+          <a href={`${base}documentos/Taller_Normalizacion.xlsx`} download="Taller_Normalizacion.xlsx">
           </a>.
         </p>
+      
+        <h3>Taller Avanzado de Normalización</h3>
+        <p><strong>Enunciado:</strong>En este taller avanzado nos enfocamos en el análisis y la descomposición de esquemas relacionales complejos hasta alcanzar la 3FN. 
+        A diferencia de ejercicios iniciales, aquí resolvimos casos que presentaban desafíos mayores, como grupos repetidos anidados, atributos multivaluados y dependencias transitivas. Trabajando sobre escenarios prácticos de negocios como un sistema de envíos internacionales y una plataforma de alquiler de películas,
+        logramos perfeccionar la identificación de llaves primarias y el desglose de tablas. El ejercicio sirvió para justificar formalmente cada paso del proceso (1FN, 2FN y 3FN), asegurando estructuras de datos eficientes, consistentes y completamente libres de redundancias.</p>
+        
+      <p class="enlace-descarga">
+          Puedes revisar las tablas, dependencias funcionales y la solución completa 
+          <a href={`${base}documentos/Taller_Avanzado_Normalizacion_CORRECCION.xlsx`} download="Taller_Avanzado_Normalizacion_CORRECCION.xlsx">
+          </a>.
+        </p>
+
+      
       </section>
       <hr/>
     </div>
@@ -39,5 +52,23 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
   }
   h3 {
     color: var(--global-color-primary, #2ecc71);
+  }
+  .enlace-descarga {
+    margin-top: 1rem;
+    font-style: italic;
+  }
+  .enlace-descarga a {
+    color: var(--global-color-primary, #2ecc71); 
+    text-decoration: underline;
+    font-weight: bold;
+    transition: opacity 0.2s ease;
+  }
+  .enlace-descarga a::before {
+    content: "[↓] ";
+    font-family: monospace;
+  }
+
+  .enlace-descarga a:hover {
+    opacity: 0.8;
   }
 </style>
